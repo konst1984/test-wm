@@ -35,5 +35,5 @@ body {
 }
 
 .wrapper-dropdown-block {
-    @apply grid max-h-[90%] max-w-[1290px] gap-[33px] rounded-[20px] border border-primary bg-white px-4 py-6 text-clamp-s shadow-3xl md:pb-[40px] md:pl-[36px] md:pr-[41px] md:pt-[40px];
+    @apply grid rounded-[20px] border border-primary bg-white px-4 py-6 text-clamp-s shadow-3xl md:pb-[40px] md:pl-[36px] md:pr-[41px] md:pt-[36px];
 }

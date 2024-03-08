@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const StaticticsBlock = () => {
     return (
-        <div className="wrapper-dropdown-block gap-7">
+        <div className="wrapper-dropdown-block gap-7 md980:pb-[38px] md980:pt-10">
             <div className="flex flex-col [word-spacing:2px]">
                 <p className="relative bottom-[6px]">
                     В десятилетнем исследовании{' '}

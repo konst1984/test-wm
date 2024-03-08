@@ -4,7 +4,7 @@ import CardTrend from './CardTrend';
 
 const TrendBlock = () => {
     return (
-        <div className="wrapper-dropdown-block gap-[33px]">
+        <div className="wrapper-dropdown-block gap-[34px]">
             <div className="flex flex-col justify-between text-clamp-s">
                 <p className="font-bold [word-spacing:2px]">
                     Большинство пациентов с ХОБЛ столкнется с обострениями: как

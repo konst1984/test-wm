@@ -11,7 +11,7 @@ interface ICardTrend {
 const CardTrend: FC<ICardTrend> = ({ icon, number, text, footnote }) => {
     return (
         <div className="flex flex-col rounded-[20px] bg-[rgba(253,217,102,0.25)] px-3 py-3 text-center md:px-4 md:py-[30px]">
-            <div>
+            <div className="m-auto max-w-28">
                 <Image
                     src={icon}
                     width={80}
@@ -20,11 +20,11 @@ const CardTrend: FC<ICardTrend> = ({ icon, number, text, footnote }) => {
                     alt="Diagram"
                 />
             </div>
-            <p className="text-clamp-xl flex-grow-1 top-[15px] relative font-bold">
+            <p className="flex-grow-1 relative top-[15px] text-clamp-xl font-bold">
                 {number}
             </p>
             <p className="[font-size:clamp(1em,1.8vw,26px)]">{text}</p>
-            <p className="top-2 relative text-lg font-light">{footnote}</p>
+            <p className="relative top-2 text-lg font-light">{footnote}</p>
         </div>
     );
 };
