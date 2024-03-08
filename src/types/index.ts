@@ -1,6 +1,6 @@
 import React from 'react';
 export interface ISecrtionTopData {
-  id: number;
+  id: string;
   icon: string;
   text: string;
   question: React.ReactNode;

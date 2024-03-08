@@ -2,7 +2,7 @@ import { ICardTrendData, ISecrtionTopData, ISectionBottomData } from '@/types';
 
 export const SectionTopData: ISecrtionTopData[] = [
     {
-        id: 1,
+        id: 'stat',
         icon: '/images/icon.svg',
         text: `В десятилетнем исследовании «Генетическая
                      эпидемиология ХОБЛ» (COPDGene) среди пациентов с
@@ -22,7 +22,7 @@ export const SectionTopData: ISecrtionTopData[] = [
         btnColor: '#01457A',
     },
     {
-        id: 1,
+        id: 'trend',
         icon: '/images/icon-2.svg',
         text: `Большинство пациентов с ХОБЛ столкнется с обострениями: как минимум одно среднетяжелое или тяжелое обострение случится в течение 3 лет у 77% пациентов1.
 В течение 5 лет после первого тяжёлого обострения в живых остаются только 40% пациентов.2 Прогноз после обострений ХОБЛ схож с таковым при сердечной недостаточности, инфаркте миокарда и некоторых злокачественных опухолях.`,
@@ -45,7 +45,10 @@ export const SectionBottomData: ISectionBottomData = {
             text: `Ингибирует бронхоконстрикторные эффекты ацетилхолина, вступая с ним в конкурентный антагонизм за взаимодействие с эффекторными мускариновыми рецепторами, дополняет и потенцирует эффект β2-агонистов1`,
             title: (
                 <>
-                    Ингаляционный <strong>антихолинергик</strong>
+                    Ингаляционный{' '}
+                    <strong className="relative bottom-1">
+                        антихолинергик
+                    </strong>
                 </>
             ),
             orderModile: 'order-1',
@@ -56,7 +59,10 @@ export const SectionBottomData: ISectionBottomData = {
             text: `Вызывает бронходилатацию посредством релаксации гладкомышечных клеток бронхов независимо от характера констриктивных стимулов, т. е. выступают в качестве функциональных антагонистов бронхоконстрикции`,
             title: (
                 <>
-                    Ингаляционный <strong>β2&#8209;агонист</strong>
+                    Ингаляционный{' '}
+                    <strong className="relative bottom-1">
+                        β2&#8209;агонист
+                    </strong>
                 </>
             ),
             orderModile: 'order-3',
@@ -67,7 +73,11 @@ export const SectionBottomData: ISectionBottomData = {
             text: `Снижает частоту обострений, особенно в сочетании с ДДБА, подавляют хроническое воспаление при астме и снижают гиперреактивность дыхательных путей`,
             title: (
                 <>
-                    Ингаляционный <strong>глюкокортикостероид</strong> (ИГКС)
+                    Ингаляционный{' '}
+                    <strong className="relative bottom-1">
+                        глюкокортикостероид
+                    </strong>{' '}
+                    (ИГКС)
                 </>
             ),
             orderModile: 'order-5',
@@ -117,7 +127,10 @@ export const CardTrendData: ICardTrendData[] = [
         number: '45.5%',
         text: (
             <>
-                пациентов с <strong>сердечной недостаточностью</strong>
+                пациентов с{' '}
+                <strong className="relative bottom-1">
+                    сердечной недостаточностью
+                </strong>
                 <sup>1</sup>
             </>
         ),
@@ -129,7 +142,10 @@ export const CardTrendData: ICardTrendData[] = [
         number: '55.3%',
         text: (
             <>
-                пациентов с <strong>инфарктом миокарда1</strong>
+                пациентов с{' '}
+                <strong className="relative bottom-1">
+                    инфарктом миокарда1
+                </strong>
                 <sup>1</sup>
             </>
         ),
@@ -141,7 +157,10 @@ export const CardTrendData: ICardTrendData[] = [
         number: '50.5%',
         text: (
             <>
-                пациентов с <strong>раком мочевого пузыря</strong>
+                пациентов с{' '}
+                <strong className="relative bottom-1">
+                    раком мочевого пузыря
+                </strong>
                 <sup>1</sup>
             </>
         ),
