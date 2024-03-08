@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import defaultTheme from 'tailwindcss/defaultTheme'
 
 const config: Config = {
   content: [
@@ -8,13 +9,48 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+       keyframes: {
+        fadein: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
       },
+       animation: {
+        fadein: 'fadein .3s ease-in-out forwards',
+      },
+      fontSize: {
+        "clamp-s": "clamp(1rem, 2vw, 24px)",
+        "clamp-m": "clamp(1.25rem, 2vw, 28px)",
+        "clamp-l": "clamp(2rem, 3vw, 40px)",
+        "clamp-xl": "clamp(2.5rem,5vw, 96px)",
+      },
+      colors: {
+        'primary': 'rgb(var(--foreground-rgb))',
+        'light-green':'rgba(var(--color-light-green-rgb))'
+      },
+      backgroundImage: {
+        'cust-gradient': 'linear-gradient(to right,rgb(var(--background-start-rgb)),rgb(var(--background-end-rgb)))',
+        'cust-yellow': 'linear-gradient(to right,#FDD966,#BCD77E)'
+      },
+      fontFamily: {
+        "sans": ['var(--font-noto)'],
+        "century-gothic": ['var(--font-cothic)'],
+      },
+      screens: {
+      'md980': '980px',
+      ...defaultTheme.screens,
+      },
+       boxShadow: {
+        '3xl': '0 0 25px 0  rgba(142,160,173,0.35)',
+        ...defaultTheme.boxShadow,
+      },
+      gridTemplateColumns: {
+        'fit': 'repeat(auto-fit, minmax(260px, 1fr))',
+      }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/line-clamp'),
+  ],
 };
 export default config;
